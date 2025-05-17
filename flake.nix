@@ -11,11 +11,11 @@
     nixosConfigurations.vncsmyrnk = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./configuration.nix
+        ./nixos/configuration.nix
 
         home-manager.nixosModules.home-manager
         {
-          home-manager.users.vncsmyrnk = import ./home.nix;
+          home-manager.users.vncsmyrnk = import ./home-manager/home.nix;
         }
       ];
     };
