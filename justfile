@@ -12,3 +12,6 @@ clean:
 
 update:
   nix flake update
+
+copy-hardware-config:
+  ln -s /etc/nixos/hardware-configuration.nix nixos

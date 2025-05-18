@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./etc/nixos/hardware-configuration.nix
+      ./hardware-configuration.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -106,6 +106,12 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
+    gcc
+    binutils
+    gnumake
+    autoconf
+    automake
+    pkg-config
   ];
 
   fonts.packages = with pkgs; [
