@@ -5,5 +5,15 @@
     neovim
     vim
     zsh
+    git
+    kitty
+    tmux
+    fzf
+    fd
+    stow
+    just
+    keyd
   ];
+
+  programs.zsh.enable = true;
 }
